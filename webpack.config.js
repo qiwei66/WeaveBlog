@@ -39,7 +39,7 @@ module.exports = {
   devServer: {
     port: 3333,
     historyApiFallback: true,
-    allowedHosts: ['all', '.alibaba-inc.com']
+    allowedHosts: ['all', '.alibaba-inc.com', '.github.io']
   },
   optimization: {
     splitChunks: {

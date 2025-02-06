@@ -35,7 +35,6 @@
     "webpack-dev-server": "^4.15.1",
     "html-webpack-plugin": "^5.5.3",
     "dotenv-webpack": "^8.0.1",
-    "gh-pages": "^6.1.0",
-    "cross-env": "^7.0.3"
+    "vercel": "^32.5.3"
   }
 }
