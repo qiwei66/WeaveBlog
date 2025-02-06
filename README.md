@@ -90,31 +90,6 @@ npm run build
    - 编辑或删除已发布的内容
    - 管理个人资料设置
 
-## 🛠️ 技术栈
-
-- React 18
-- TypeScript
-- Ant Design
-- Webpack 5
-- React Router 6
-- GitHub API
-
 ## 📄 许可证
 
 [MIT License](LICENSE)
-
-## 🤝 贡献
-
-欢迎提交 Issues 和 Pull Requests！
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开 Pull Request
-
-## 💖 致谢
-
-- [React](https://reactjs.org/)
-- [Ant Design](https://ant.design/)
-- [GitHub API](https://docs.github.com/en/rest)

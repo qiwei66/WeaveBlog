@@ -17,17 +17,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (code: string) => {
     try {
       // 直接使用 GitHub OAuth API
+      // 由于 CORS 限制，我们需要使用代理服务
       const tokenResponse = await axios.post(
-          'https://api.github.com/applications/' + process.env.GITHUB_CLIENT_ID + '/token',
+          'https://github.com/login/oauth/access_token',
           {
-            client_id: process.env.GITHUB_CLIENT_ID,
-            client_secret: process.env.GITHUB_CLIENT_SECRET,
+            client_id: process.env.CLIENT_ID,
+            client_secret: process.env.CLIENT_SECRET,
             code,
           },
           {
             headers: {
               Accept: 'application/json',
-              Authorization: 'Basic ' + btoa(process.env.GITHUB_CLIENT_ID + ':' + process.env.GITHUB_CLIENT_SECRET)
+              'Content-Type': 'application/json',
             },
           }
       );
